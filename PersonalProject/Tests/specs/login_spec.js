@@ -1,4 +1,5 @@
-let login = require('../Tests/POMs/login');
+let login = require('../POMs/login');
+let registration = require('../POMs/registration');
 
 describe('Login',function(){
 
@@ -7,7 +8,7 @@ describe('Login',function(){
     })
 
     it('Login page loads',function(){
-        
+        login.confirmTitle();
     })
     
     it('Attempt login with no credentials',function(){
@@ -45,12 +46,9 @@ describe('Login',function(){
      })
 
      it('Route to registration page',function(){
-        login.enterUsername('Testing');
+        login.clickRegister();
 
-        login.enterPassword('Testing')
-        
-        login.clickSubmit();
- 
-         login.checkError('User Not Found');
+        registration.checkTitle();
+
      })
 });

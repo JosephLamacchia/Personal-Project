@@ -20,5 +20,9 @@ export class LoginService {
     return this.http.post<User>('http://localhost:8080/login', user, { headers: this.postHeaders });
   }
 
+  register(user: User): Observable<User> {
+    return this.http.post<User>('http://localhost:8080/register', user, { headers: this.postHeaders });
+  }
+
 
 }

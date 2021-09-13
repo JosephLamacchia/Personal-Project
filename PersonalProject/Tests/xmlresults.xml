@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="6" time="3.034">
- <testsuite name="Login" timestamp="2021-09-11T12:36:38" hostname="localhost" time="3.034" errors="0" tests="6" skipped="1" disabled="0" failures="0">
-  <testcase classname="Login" name="Login page loads" time="0.71" />
-  <testcase classname="Login" name="Attempt login with no credentials" time="0.552" />
-  <testcase classname="Login" name="Attempt login with username and without password" time="0.488" />
-  <testcase classname="Login" name="Attempt login with unrecognized credentials" time="0.635" />
-  <testcase classname="Login" name="Attempt login with recognized credentials" time="0.001">
+<testsuites disabled="0" errors="0" failures="0" tests="12" time="6.92">
+ <testsuite name="Login" timestamp="2021-09-13T12:32:12" hostname="localhost" time="3.197" errors="0" tests="6" skipped="1" disabled="0" failures="0">
+  <testcase classname="Login" name="Login page loads" time="0.897" />
+  <testcase classname="Login" name="Attempt login with no credentials" time="0.502" />
+  <testcase classname="Login" name="Attempt login with username and without password" time="0.533" />
+  <testcase classname="Login" name="Attempt login with unrecognized credentials" time="0.804" />
+  <testcase classname="Login" name="Attempt login with recognized credentials" time="0">
    <skipped message="Temporarily disabled with xit" />
   </testcase>
-  <testcase classname="Login" name="Route to registration page" time="0.648" />
+  <testcase classname="Login" name="Route to registration page" time="0.461" />
+ </testsuite>
+ <testsuite name="registration" timestamp="2021-09-13T12:32:16" hostname="localhost" time="2.833" errors="0" tests="5" skipped="0" disabled="0" failures="0">
+  <testcase classname="registration" name="Registration page loads" time="0.524" />
+  <testcase classname="registration" name="Attempt to register without username" time="0.571" />
+  <testcase classname="registration" name="Attempt to register without password" time="0.584" />
+  <testcase classname="registration" name="Attempt to register without matching passwords" time="0.57" />
+  <testcase classname="registration" name="Can return to Login" time="0.584" />
+ </testsuite>
+ <testsuite name="Register and Login" timestamp="2021-09-13T12:32:19" hostname="localhost" time="0.89" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Register and Login" name="Registration and Login" time="0.89" />
  </testsuite>
 </testsuites>
